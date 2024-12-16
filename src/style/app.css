@@ -1,0 +1,20 @@
+@import './index.css';
+
+html,
+body,
+#root {
+  height: 100vh;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+@layer components {
+  .c-btn {
+    @apply flex cursor-pointer items-center gap-1 justify-center rounded-md border p-2 text-center text-slate-700 hover:bg-slate-500 hover:text-slate-100;
+  }
+}
+.searchContainer {
+  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),url('@/assets/images/freepik__expand__2697.png');
+}
